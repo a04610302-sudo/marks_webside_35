@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    </head>
+<body>
+    <center>
+    
+
+    <form action="/" method="POST" align="center"> 
+        <input type="text" name="mark" id=""><br><br>
+        <input type="submit" name="" id=""><br>
+        <h4> <i>if your marks is grater then 35 your pass !</i></h4>
+    </form>
+
+   
+
+    {% if marks|int > 35 %}
+        <font color="green" style="font-size: 52px;">pass</font>     
+        <br><br>
+    <img src="{{url_for('static',filename='happy.png')}}" alt="">
+
+    {% else %}
+        <font color="red" style="font-size: 52px;" >fail</font>     
+        <br><br>
+    <img src="{{url_for('static',filename='sad.jpg')}}" alt="">
+    {% endif %}
+
+</center>    
+
+</body>
+</html>
