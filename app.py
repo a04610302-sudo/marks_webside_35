@@ -9,6 +9,6 @@ def home():
         markn = None
 
     return render_template('index.html',marks=markn)
-app.run(debug=True)
+
 
 
